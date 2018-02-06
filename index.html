@@ -6,7 +6,41 @@
 	<link rel="stylsheet" href="style.css" type="text/css">
 </head> 
 <body>
-
+	<form action="https://formspree.io/synek00101@gmail.com" method="POST">
+		<label for="name">Imię:</label><br>
+		<input type="text" id="name" name="name"><br>
+		
+		<label for="surname">Nazwisko:</label><br>
+		<input type="text" id="surname" name="surname"><br>
+		
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email"><br>
+		
+		<label for="number">Numer telefonu:</label><br>
+		<input type="number" id="number" name="number"><br>
+		
+		<legend>Miasto:</legend>
+		<select name="town" id="town">
+			<option value="Kraków">Kraków</option>
+			<option value="Warszawa">Warszawa</option>
+			<option value="Gdańsk">Gdańsk</option>
+		</select>
+		<br>
+		
+		<legend>Płeć</legend>
+			<input type="radio" value="Mężczyzna" name="plec">Mężczyzna<br>
+			<input type="radio" value="Kobieta" name="plec">Kobieta<br>
+		<label for="zgoda">
+			<input type="checkbox" id="zgoda" name="zgoda" value="Tak">Zgoda na przetwarzanie danych osobowych
+		</label>
+		<br>
+		
+		<label for="msg">Wiadomość:</label><br>
+		<textarea id="msg" name="msg"></textarea><br>
+		
+		<input type="submit" value="Wyślij" id="submit">
+	</form>
+	
 	
 </body>
 </html>
